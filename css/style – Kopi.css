@@ -1,0 +1,515 @@
+/* Setter standard skrifttype for hele nettsiden */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Definerer et grid-container som inneholder header, main og footer */
+#grid-container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+}
+
+/* Legger til litt padding til header, main og footer for mellomrom */
+header, footer {
+    padding: 1rem;
+}
+
+main{
+    padding: 1rem;
+    padding-top: 0;
+}
+
+/* Styler header-seksjonen */
+header {
+    font-size: 2rem;
+    font-weight: 600;
+    grid-area: header;
+}
+
+header img{
+    padding: 0.2rem;
+}
+
+/* Gjør navigasjonselementene i header til flexbokser som er justert mellomrom og til høyre */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+h4{
+    display: none;
+}
+
+h5{
+    font-size: 100%;
+    text-decoration: underline;
+
+}
+
+/* Skjuler standard navigasjonsmeny */
+.navbar {
+    display: none;
+    
+}
+
+/* Styler responsiv navigasjonsmeny */
+.responsive {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #242424a8;
+    margin: 0;
+    padding: 0;
+    top: 40px;
+    width: 40%;
+    list-style: none;
+    border-radius: 20px;
+}
+
+.responsive a {
+    color: #fff;
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+/* Styler main-seksjonen i gridet */
+main {
+    grid-area: main;
+    
+}
+
+
+
+
+
+
+/* Setter bredden til bilder inni main-seksjonen til 100% */
+main section img {
+    width: 100%;
+    
+}
+
+
+.flex-section-banner{
+    max-height: 200px;
+    padding: 1rem;
+}
+
+
+main h1,h2 {
+    display: flex;
+    justify-content: center;
+}
+
+main h4{
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    
+}
+
+main h3{
+    display: none;
+}
+
+main h5{
+    display: hidden;
+    display: flex;
+    justify-content: center;
+}
+main h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    min-width: 80%;
+    
+    
+
+}
+
+.flex-sideway{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.1rem;
+    padding: 1rem;
+    width:100%;   
+}
+
+
+.flex-static{
+    display:block;
+    
+    justify-content: center;
+    gap: 1rem;
+    padding:0;
+    border-radius: 20px; 
+    
+}
+.flex-sideway-staying{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.1rem;
+    width:100%;
+    
+}
+
+.flex-down-disappear{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.1rem;
+    width:100%;
+    
+}
+
+
+
+figure {
+    margin: 20px;
+    
+}
+figure img {
+    vertical-align: top;
+    
+    
+}
+figure figcaption {
+    text-align: center;
+}
+
+
+footer {
+    grid-area: footer;
+    background-color: darkgreen;
+    
+}
+
+footer p{
+    text-decoration: dashed;
+    color: #ffffff;
+    margin: 0.2rem;
+    
+    
+}
+
+#services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #efefef;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+#services h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.black-btn {
+    
+    
+    display: block;
+    padding: 1.5rem;
+    font-size: 60%;
+    text-decoration: none;
+    background-color: #171717;
+    color: #fff;
+    border-radius: 60px;
+    font-weight: 400;
+}
+
+.black-btn-square-desktop {
+    
+    
+    display: block;
+    padding: 1.5rem;
+    font-size: 100%;
+    text-decoration: none;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 400;
+    border: #8dd332;
+    border-radius: 10px solid #ff0000;
+    
+}
+
+
+.black-btn-hidden {
+    
+    display:none;
+    padding: 1.5rem;
+    font-size: 60%;
+    text-decoration: none;
+    background-color: #171717;
+    color: #fff;
+    border-radius: 60px;
+    font-weight: 400;
+}
+
+.black-btn-hidden-shoe-size {
+    
+    display:none;
+    padding: 1.5rem;
+    font-size: 200%;
+    text-decoration: none;
+    background-color: #9bc723;
+    color: #fff;
+    border-radius: 60px;
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+.black-folddown {
+    
+    
+    display: block;
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 175%;
+    text-decoration: none;
+    background-color: #171717;
+    color: #fff;
+    border-radius: 60px;
+    font-weight: 400;
+}
+
+.green-folddown {
+    
+    
+    display: block;
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 175%;
+    text-decoration: none;
+    background-color: #8dd332;
+    color: #000000;
+    border-radius: 60px;
+    font-weight: 400;
+}
+
+.red-btn {
+    
+    
+    display: block;
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 140%;
+    text-decoration: none;
+    background-color: #751b1b;
+    color: #fff;
+    border-radius: 60px;
+    font-weight: 400;
+}
+
+.line {
+    display: grid;
+    grid-area: main;
+  
+    border-top: 2px solid #000;
+    border-radius: 3px;
+    padding: 0.5rem;
+
+    
+    
+  }
+#services article {
+    max-width: 300px;
+    width: 100%;
+    min-width: 200px;
+}
+
+.flex-sideway-desktop{
+    display: none;
+}
+
+.flex-sideway-description-block{
+    display: none;
+}
+
+
+
+
+
+.description-box{
+    display: none;
+}
+
+.customer-review-box{
+    
+    display: block;
+    padding: 1.5rem;
+    margin: 0;
+    font-size: 100%;
+    text-decoration: none;
+    background-color: #000000;
+    color: #fff;
+    
+    font-weight: 400;
+}
+
+
+
+/* Mediestørrelsesregel for skjermer som er bredere enn 600px */
+@media only screen and (min-width: 600px) {
+    /* Endrer grid-malen for bredere skjermer */
+    #grid-container {
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+    }
+
+    
+    .navbar {
+        font-size: 40%;
+        display:grid;
+        flex-direction: column;
+        gap: .1rem;
+        list-style: none;
+        
+        padding-left: 1rem;
+        grid-column: 1/1;
+       
+        
+    }
+
+    .description-box{
+        display: block;
+        margin-top:0;
+        margin-left: 0;
+    }
+
+    main h3{
+        display: block;
+    text-align: center;
+
+    
+        
+    }
+    
+    h4{
+    display: block;
+    
+    }
+    
+    ul .navbar{
+        display: none;
+        position: absolute;
+    }
+
+    /* Skjuler menyikoner i header */
+    #ham {
+        display: none;
+        
+    }
+header{
+    display: flex;
+    justify-content: center;
+}
+
+    header nav {
+        justify-content: center;
+    }
+    header nav img{
+        display: grid;
+        grid-column:2/3;
+        padding-left: 1rem;
+        
+    }
+
+    header{
+        padding-bottom: 0.5rem;
+    }
+
+    .flex-section-banner{
+        display: grid;
+        max-height: 200px;
+        padding: 1rem;
+        grid-column: 2/3;
+    }
+    .black-btn-hidden-shoe-size{
+        display: block;
+    }
+
+    .black-btn-hidden{
+        display: block;
+    }
+   
+
+    /* Gjør flex-seksjoner som viser bilder og tekst ved siden av hverandre med mellomrom */
+    .flex-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    
+
+    
+
+    
+
+    .flex-sideway{
+        display: none;
+    }
+
+    .flex-sideway-description-block{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .flex-sideway-desktop{
+        display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.1rem;
+    padding: 0.5rem;
+    width:100%; 
+    }
+
+    /* Legger til litt mellomrom og justering i flex-seksjoner */
+    .flex-section section {
+        padding: 1rem;
+        width: 40%;
+        align-self: center;
+    }
+
+    main section img {
+        
+        justify-content: center;
+        align-items: center;
+        max-height: 800px;
+        width: 100%;   
+    }
+
+    main section  {
+        
+        justify-content: center;
+        align-items: center;
+        max-height: 100%   
+    }
+    
+    .flex-down-disappear{
+        display: none;
+    }
+
+    /* Endrer rekkefølgen av bilde og tekst i høyrejusterte seksjoner */
+    .right img {
+        order: 1;
+    }
+}
